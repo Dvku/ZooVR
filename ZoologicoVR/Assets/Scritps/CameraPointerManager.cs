@@ -52,6 +52,7 @@ public class CameraPointerManager : MonoBehaviour
         {
             _gazedAtObject?.SendMessage("OnPointerExit", null, SendMessageOptions.DontRequireReceiver);
             _gazedAtObject = null;
+            PointerOutGaze();
         }
 
         if (Google.XR.Cardboard.Api.IsTriggerPressed)
