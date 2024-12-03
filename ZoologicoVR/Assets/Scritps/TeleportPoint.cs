@@ -39,7 +39,7 @@ public class TeleportPoint : MonoBehaviour
         player.transform.position = transform.position;
         Camera camera = player.GetComponentInChildren<Camera>();
         float rotY = transform.rotation.eulerAngles.y - camera.transform.localEulerAngles.y;
-        player.transform.rotation = Quaternion.Euler(0, rotY, 0);
+        
     }
 
 }
